@@ -8,9 +8,10 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.get('/.well-known/acme-challenge/', (req, res) => {
+app.get('/.well-known/acme-challenge/1rnl7BVBB769bTIj9aD4wDTN4F2pQXGCdQ5oV9DrGeU
+', (req, res) => {
   const filename = req.params.filename;
-  const challengeData = "4RnfWtLKaIc6EdhsOsr4fb6RFZuUoabZW5dPW36cmc";
+  const challengeData = "1rnl7BVBB769bTIj9aD4wDTN4F2pQXGCdQ5oV9DrGeU.LTnAWEJUYniHrAKqAEPZXLIgFFhgasiXPugUOQSUQIA";
   res.send(challengeData);
 });
 
