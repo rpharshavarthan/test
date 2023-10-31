@@ -8,6 +8,11 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
+app.get('/idk', (req, res) => {
+  // Serve the HTML file
+  res.send("helloidk");
+});
+
 app.get('/.well-known/acme-challenge/1rnl7BVBB769bTIj9aD4wDTN4F2pQXGCdQ5oV9DrGeU
 ', (req, res) => {
   const filename = req.params.filename;
